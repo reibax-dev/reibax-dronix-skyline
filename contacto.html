@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reibax &copy">
+    <meta name="description" content="Alquiler de drones con piloto.">
+    <link rel="icon" href="img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dronix Skiline</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.svg" width="200px" height="120px" alt="logo">
+        <h1>Dronix Skyline</h1>
+        <nav >
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header> 
+
+    
+    <menu >
+         <aside>
+            <form action="presupuesto.php" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder=" Nombre">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder=" Apellido">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder=" Teléfono">
+                        <label for="email">Correo Electrónico </label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui ..."></textarea>
+                        <button type="submit">Enviar</button>
+                </fieldset>  
+                
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                        <label for="fecha-cita">Fecha: </label>
+                        <input type="date" id="fecha-cita" name="fecha-cita">
+                        <label for="trabajo">Trabajo</label>
+                        <select name="trabajo" id="trabajo">
+                            <option value="">--Selecciona trabajo--</option>
+                            <option value="celebraciones">Celebraciones</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="inspecciones">Inspecciones</option>
+                        </select>
+                        
+                        <label for="subir-img">Envia Fotos</label>
+                        <input type="file" id="subir-foto" name="foto" accept="image/*" >
+                        
+                </fieldset>
+
+            </form>
+
+        </aside>
+    </menu>    
+    <footer>
+        <div class="footer">
+        <img src="img/logo.svg" width="200px" height="120px" alt="logo">
+        <h1>Dronix Skyline</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        </div>
+        <div class="copy">
+        <p>Todos los derechos reservados a Reibax &copy</p>
+        </div>
+    </footer>    
+</body>
+</html>
