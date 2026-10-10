@@ -624,7 +624,6 @@ label {
   background-image: url(../img/contacto.webp);
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   padding: 5rem 0;
   text-align: center;
   height: 30rem;
@@ -633,6 +632,7 @@ label {
 @media (min-width: 480px) {
     .contacto__presupuesto {
       height: 70rem;
+      background-attachment: fixed;
       
     }
 }
