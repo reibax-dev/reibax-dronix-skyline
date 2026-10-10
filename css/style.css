@@ -15,6 +15,7 @@ html {
  Comunes 
  ------------------------------------*/
 
+ 
 a {
   text-decoration: none;
   font-size: 2rem;
@@ -32,7 +33,7 @@ a {
 ------------------------------------------------------------*/     
 
 .header {
-  background-color: aqua;
+  background: linear-gradient(to right, blue 0%, rgb(176, 129, 234) 100%);
   display: flex;
   flex-direction: column;
   align-items:stretch;
@@ -56,6 +57,7 @@ a {
     }
 }
 .header__text {
+  color: whitesmoke;
   text-align: center;
   font-size: 3rem;
   padding: 0 auto;
@@ -64,8 +66,7 @@ a {
 @media (min-width: 480px) {
     .header__text {
       font-size: 3rem;
-      margin: 0;
-      
+      margin: 0;      
     }
 }
 
@@ -91,14 +92,26 @@ a {
     header {
       display: flex;
       justify-content:space-around;
-
       margin-bottom: 0  ;
+    }
+}
+.header__social__net {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+}
+@media (min-width: 480px) {
+    .header__social__net {
+      align-items: center;
+      margin-right: 25rem;
     }
 }
 .header__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 
 }
 .header__nav--enlace {
@@ -116,7 +129,7 @@ a {
     margin-right: 3rem;
     
   }
-  .header__nav--enlace {
+.header__nav--enlace {
     font-size: 2.5rem;
     margin: 0;
     cursor: pointer;
@@ -130,7 +143,7 @@ header img {
 --------------------------------------------------------------*/
 
 .descripcion {
-    background-color: rgb(215, 211, 211);
+    background: linear-gradient(to right, rgb(61, 61, 212) 0%, rgb(176, 129, 234) 100%);
     text-align: center;
   }
 
@@ -140,7 +153,7 @@ header img {
 @media (min-width: 480px) {     
     .descripcion__text {
       position: absolute;
-      background: linear-gradient( rgba(0,0,0, 50%) );
+      background: linear-gradient( rgba(11, 32, 221, 30%) );
       inset: 0;
       display: flex;
       align-items: center;
@@ -203,6 +216,7 @@ header img {
     .descripcion__video {
       width: 100%;
       max-height: 80rem;
+      object-fit: cover;
     }
 }
     
@@ -304,34 +318,36 @@ padding: 0;
 
 .aside_index {
   margin: 5rem 0.5rem;
-  /* display: flex;
-  align-items: center; */
   
 }
 .fieldset_index {
-  height: 70rem;
-  border: 4px solid grey;
+  height: 68rem;
+  border: 4px solid black;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
+  background: linear-gradient(to bottom, rgb(113, 113, 217) 0%, rgb(176, 129, 234) 100%);
   
 }
 legend {
   text-align: center;
-  font-size: 2.5rem;
-
-  
+  font-size: 2.5rem; 
 }
 
-input ,textarea {
+input {
   display: block;
   margin-bottom: 2rem; 
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   text-align: left;
   font-size: 2rem;
 }
+textarea {
+  padding: 1rem 3rem;
+  margin-bottom: 2rem; 
+  font-size: 2rem;
+} 
 label {
   font-size: 2rem;
   padding: 0;
@@ -349,16 +365,18 @@ label {
   cursor: pointer;
 }
 
-/* Footer */
+/* ------------------------------------------------------
+                     Footer                              
+-------------------------------------------------------*/
 
 .footer {
-  background-color: aqua;
+  background: linear-gradient(to right, blue 0%, rgb(176, 129, 234) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
+  border-top: 2px solid black;
   
 }
 @media (min-width: 480px) {
@@ -367,13 +385,12 @@ label {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 ;
-    border-top: 2px solid black;
+    margin: 0 ;    
     padding: 2rem ;
   }
 }
-footer img {
-  margin-left: 3rem;
+.footer__logo{
+  margin-top: 1rem;
 }
 .copy {
   background-color: black;
@@ -386,6 +403,56 @@ footer img {
   font-size: 2rem;
   color: black;
 }
+
+/* ---------------------------------------------------
+                    REDES SOCIALES                    
+------------------------------------------------------*/
+
+
+.social__net {
+  margin: 4rem 0;
+  display: flex;
+  gap: 3rem;
+}
+@media (min-width: 480px) {
+  .social__net {
+    margin: 0 4rem ;
+    
+  }
+}
+   
+.social__net--enlace::before{
+  content: '';
+  padding: 2rem;
+  display: inline-block;  
+  width: 3.5rem;
+  height: 3.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.social__net--enlace[href*="facebook"]::before {    /* wildcard */
+  background-image: url(../img/facebook.svg);
+} 
+.social__net--enlace[href*="instagram"]::before {    /* wildcard */
+  background-image: url(../img/instagram.svg);
+} 
+.social__net--enlace[href*="youtube"]::before {    /* wildcard */
+  background-image: url(../img/youtube.svg);
+} 
+.social__net--enlace[href*="whatsapp"]::before {    /* wildcard */
+  background-image: url(../img/whatsapp.svg);
+} 
+.discapacitados {           /*  Oculto el texto para k los ciegos lo oigan */
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+  display: block;
+}
 .copy p {
   font-size: 2rem;
   color: white;
@@ -394,52 +461,125 @@ footer img {
 
 }
 
-/* Servicios */
-
+/* ---------------------------------------------------
+                   Servicios                          
+------------------------------------------------------*/
+.servicios__menu {
+  padding: 0;
+  margin: 0;
+}
 .servicios_tipo {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .servicios_text {
-  margin: 0 5rem;
+  margin: 2rem 2rem;
+}
+@media (min-width: 480px) {
+  .servicios_tipo {
+    margin: 2rem 10rem;
+  }
+}
+.servicios_text h2 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .servicios_text h2 {
+    font-size: 6rem;    
+  }
+}
+.servicios_text span {
+    font-size: 2.5rem;
+    color: rgb(2, 2, 167);
+  }  
+@media (min-width: 480px) {
+  .servicios_text span {
+    font-size: 5rem;
+  }
+    
 }
 .servicios_text p {
   font-size: 2rem;
   font-weight: 2;
 }
-
-
-.servicios_imagen {
-  height: 50rem;
-  width: 50rem;
-  object-fit: cover;
+@media (min-width: 480px) {
+   .servicios_text p {
+    font-size: 3rem;
+   } 
 }
 
+.servicios_imagen img {
+  display: block;
+  max-height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 480px) {
+  .servicios_imagen img {
+    max-height: 70rem;
+    width: 100%;
+  }    
+}
 
-/* Nosotros */
+/* -------------------------------------------------
+                  Nosotros                           
+--------------------------------------------------*/
+
+
 .volamos {
   text-align: center;
-  margin: 0;
+  margin: 0 3rem;
   padding-bottom: 2rem;
-
+}
+@media (min-width: 480px) {
+    .volamos {
+      margin: 0 6rem;
+    }
 }
 .volamos h3 {
   font-size: 4rem;
+}
+@media (min-width: 480px) {
+  .volamos h3 {
+    font-size: 6rem;
+}    
 }
 .volamos p {
   font-size: 2rem;
   font-weight: 2;
 }
+@media (min-width: 480px) {
+   .volamos p {
+    font-size: 3rem;
+   } 
+}
 .imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 480px) {
+    .imagenes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
   margin-bottom: 4rem;
-  
-  
 }
+}
+
+.imagenes_imagen {
+  transition-property: transform;
+  transition-duration: 500ms;
+}  
+.imagenes_imagen:hover{
+  transform: scale(1.1);
+}  
 :first-child {
   grid-column: 1 / 3;
-  /* grid-row: 1 / 3; */
 }
 :nth-child(3) {
   grid-column: 2 / 3;
@@ -450,6 +590,10 @@ footer img {
 .imagenes_imagen {
   width: 100%;
   height: 35rem;
-  object-fit: cover;
-  
+  object-fit: cover; 
 } 
+
+/* ---------------------------------------------------
+                   CONTACTO                           
+----------------------------------------------------*/
+
