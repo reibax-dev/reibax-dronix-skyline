@@ -57,6 +57,7 @@ a {
     }
 }
 .header__text {
+  font-family: "Oxanium", sans-serif;
   color: whitesmoke;
   text-align: center;
   font-size: 3rem;
@@ -168,6 +169,7 @@ header img {
 
 .descripcion__text--grup h1 {
    font-size: 5rem;
+   font-family: "Oxanium", sans-serif;
 }  
 @media (min-width: 480px) {
     .descripcion__text--grup {
@@ -180,6 +182,7 @@ header img {
     
 .descripcion__text--grup p {
     font-size: 2rem;
+    font-family: "Oxanium", sans-serif;
 }
 @media (min-width: 480px) {
     .descripcion__text--grup p {
@@ -191,8 +194,9 @@ header img {
   border-bottom: 2px solid black;
   margin: 2rem auto;
   padding: 4rem ;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bold;
+  font-family: "Oxanium", sans-serif;
 }
 @media (min-width: 480px) {
   .descripcion__fin {
@@ -266,6 +270,7 @@ header img {
 .article--text h2 {
   font-size: 3rem;
   margin-top: 0;
+  font-family: "Oxanium", sans-serif;
 }
 @media (min-width: 480px) {
     .article--text h2 {
@@ -275,11 +280,16 @@ header img {
 }
 .article--text p{
   font-size: 1.8rem;
-  line-height: 2rem;
+  line-height: 2;
   margin: 0 4rem;
   text-align: left;
   margin-bottom: 3rem;
 
+}
+@media (min-width: 480px) {
+    .article--text p {
+      font-size: 2.5rem;
+    }
 }
 @media (min-width: 480px) {
     .article__1 , .article__2 , .article__3{
@@ -491,6 +501,7 @@ label {
 .servicios_text h2 {
   font-size: 3.5rem;
   text-align: left;
+  font-family: "Oxanium", sans-serif;
 }
 @media (min-width: 480px) {
   .servicios_text h2 {
@@ -539,9 +550,11 @@ label {
   text-align: center;
   margin: 0 3rem;
   padding-bottom: 2rem;
+  font-family: "Oxanium", sans-serif;
 }
 .volamos h3 {
   font-size: 4rem;
+  
 }
 @media (min-width: 480px) {
   .volamos h3 {
@@ -550,7 +563,9 @@ label {
 }
 .volamos p {
   font-size: 2rem;
-  font-weight: 2;
+  font-weight: bold;
+  line-height: 1.5;
+
 }
 @media (min-width: 480px) {
    .volamos p {
@@ -630,12 +645,14 @@ label {
       flex-direction: column;
       align-items: center;
       justify-content:flex-start;
+      font-family: "Oxanium", sans-serif;
     }
 }
 .contacto__text h2 {
   display: block;
   font-size: 4rem;
   color: white;
+  
 }
 @media (min-width: 480px) {
     .contacto__text h2 {
