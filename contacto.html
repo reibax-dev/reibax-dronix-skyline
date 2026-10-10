@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reibax &copy">
+    <meta name="description" content="Alquiler de drones con piloto.">
+    <link rel="icon" href="img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dronix Skiline</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__logo--img">
+                <img src="img/logo.svg" width="200px" height="120px" alt="logo">
+            </div>
+            <div class="header__text">
+                <h2>Dronix Skyline</h2>
+            </div>
+        </div>
+
+        <nav class="header__social__net">
+            <a class="social__net--enlace" href="https://www.facebook.com"> <span class="discapacitados">Facebook</span></a>
+            <a class="social__net--enlace" href="https://www.instagram.com"><span class="discapacitados">Instagram</span></a>
+            <a class="social__net--enlace" href="https://www.youtube.com"><span class="discapacitados">YouTube</span></a>
+            <a class="social__net--enlace" href="https://www.whatsapp.com"><span class="discapacitados">Whatsapp</span></a>           
+        </nav>
+        <nav class="header__nav">
+            <a class="header__nav--enlace"  href="index.html">Inicio</a>
+            <a class="header__nav--enlace"  href="servicios.html">Servicios</a>
+            <a class="header__nav--enlace"  href="nosotros.html">Nosotros</a>
+            <a class="header__nav--enlace"  href="contacto.html">Contacto</a>
+        </nav>
+    </header> 
+
+    
+    <menu class="contacto">
+        <section class="contacto__presupuesto"> 
+            <div class="contacto__text">          
+                <h2>Contacta con nosotros</h2>
+                <p>Nos adaptamos a todas las circustancias</p>
+                <p>Presupuestos sin compromiso</p>
+            </div>
+        
+        
+        </section>
+        <nav class="contacto__social">
+            <a class="social__net--contacto" href="https://www.facebook.com"> <span class="discapacitados">Facebook</span></a>
+            <a class="social__net--contacto" href="https://www.instagram.com"><span class="discapacitados">Instagram</span></a>
+            <a class="social__net--contacto" href="https://www.youtube.com"><span class="discapacitados">YouTube</span></a>
+            <a class="social__net--contacto" href="https://www.whatsapp.com"><span class="discapacitados">Whatsapp</span></a>
+           
+        </nav>
+        <section class="formulario">
+        <form class="contacto__form" action="presupuesto.php" method="post">
+                <fieldset class="contacto__fiel">
+                    <legend  class="contacto__legend">Datos Personales</legend>
+                    <div class="contacto__formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder=" Nombre">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder=" Apellido">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder=" Teléfono">
+                        <label for="email">Correo Electrónico </label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="10" cols="20" placeholder="Escribe tu mensaje aqui ..."></textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>  
+                
+                <fieldset class="contacto__fiel">
+                    <legend class="contacto__legend" >Presupuesto</legend>
+                    <div class="contacto__formulario">
+                        <label for="fecha-cita">Fecha: </label>
+                        <input type="date" id="fecha-cita" name="fecha-cita">
+                        <label for="trabajo">Trabajo</label>
+                        <select name="trabajo" id="trabajo">
+                            <option value="">----Selecciona trabajo----</option>
+                            <option value="celebraciones">Celebraciones</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="inspecciones">Inspecciones</option>
+                        </select>
+                        
+                        <label for="subir-img">Envia Fotos</label>
+                        <input type="file" id="subir-foto" name="foto" accept="image/*" >
+                    </div>    
+                </fieldset>
+        </form>
+        </section>
+    </menu>    
+    <footer>
+        <div class="footer">
+        <img class="footer__logo" src="img/logo.svg" width="200px" height="120px" alt="logo">
+        <address class="direccion-contacto" data-latitud="43.236" data-longitud="-2.968">
+        <strong>Dronix Skyline S.A.</strong><br>
+        Calle Gran Azul, Nº 39, Planta 2<br>
+        48011, Bilbao, Bizkaia<br>
+        España
+        </address>
+        <nav class="social__net">
+            <a class="social__net--enlace" href="https://www.facebook.com"> <span class="discapacitados">Facebook</span></a>
+            <a class="social__net--enlace" href="https://www.instagram.com"><span class="discapacitados">Instagram</span></a>
+            <a class="social__net--enlace" href="https://www.youtube.com"><span class="discapacitados">YouTube</span></a>
+            <a class="social__net--enlace" href="https://www.whatsapp.com"><span class="discapacitados">Whatsapp</span></a>
+           
+        </nav>
+        </div>
+        <div class="copy">
+        <p>Todos los derechos reservados a Reibax &copy</p>
+        </div>
+    </footer>    
+</body>
+</html>
