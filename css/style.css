@@ -639,18 +639,22 @@ label {
       
     }
 }
-@media (min-width: 480px) {
-    .contacto__text {     
-      position: absolute;
-      background: linear-gradient( rgba(3, 8, 57, 0.5) );
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content:flex-start;
-      font-family: "Oxanium", sans-serif;
-    }
+.contacto__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  font-family: "Oxanium", sans-serif;
+  position: absolute;
+  background: linear-gradient( rgba(3, 8, 57, 0.5) );
+  inset: 0;
 }
+/* @media (min-width: 480px) {
+    .contacto__text {     
+      
+      
+    }
+} */
 .contacto__text h2 {
   display: block;
   font-size: 4rem;
