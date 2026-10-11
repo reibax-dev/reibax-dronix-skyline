@@ -43,11 +43,13 @@ En el **HEAD** , me he puesto como autor, he puesto una breve descripción, he p
 
 **LOGO** lo he creado con promps en GeminAI y lo he recortado con un programa de edición. Luego lo pase de .PNG a .SVG
 
-**VIDEOS** Los he grabado desde el portátil en .MOV y con "VLC" los he pasado a .MP4 para bajarles de peso .
+**VIDEOS** Los he grabado desde el portátil en .MOV y con "VLC" los he pasado a .MP4 para bajarles de peso.
 
 **Imagenes** hay un poco de mix porque me las he bajado de Google en .JPG .JPEG .WEBP pero a todas las he incluido el **Loading="Lazy"** 
 
 **SOCIAL** Las direcciones son las genéricas pero te mandan a las webs de inicio de las redes que he puesto, la descripciones no están eliminadas, las he ocultado para que las personas discapacitadas lo puedan escuchar cuales tienen.
+
+**VARIABLES** he dejado el archivo de "variables.css" aunque no lo he usado, por si en un futuro lo quiero usar.  
 
 **GIT / GITHUB** Es el primer proyecto mio que hago desde el principio hasta el final usando su sistema de ramas, commits, push etc...
 
