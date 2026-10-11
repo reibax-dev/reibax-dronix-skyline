@@ -44,7 +44,6 @@ a {
       display: flex;
       flex-direction: row;
       justify-content:space-evenly;
-      /* align-items: center; */
     }
 }
 .header__logo--img {
@@ -84,13 +83,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content:left;
-    align-items: center;
-    
-}
+    align-items: center;    
+  }
 }
 
 @media (min-width: 480px) {
-    header {
+    .header {
       display: flex;
       justify-content:space-around;
       margin-bottom: 0  ;
@@ -155,7 +153,7 @@ header img {
     .descripcion__text {
       position: absolute;
       background: linear-gradient( rgba(3, 8, 57, .3) );
-      inset: 0;
+      inset: 0;                 /*!     con esto hace que ocupe todo el area                            */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -417,7 +415,7 @@ label {
   
 }
 .direccion-contacto {
-  font-style: normal; /* Por defecto <address> pone el texto en cursiva; esto lo vuelve normal */
+  font-style: normal; /*! Por defecto <address> pone el texto en cursiva, esto lo vuelve normal */
   line-height: 1.5;
   font-size: 2rem;
   color: black;
@@ -462,7 +460,7 @@ label {
 .social__net--enlace[href*="whatsapp"]::before {    /* wildcard */
   background-image: url(../img/whatsapp.svg);
 } 
-.discapacitados {           /*  Oculto el texto para k los ciegos lo oigan */
+.discapacitados {           /*!  Oculto el texto para k los ciegos lo oigan */
   width: 1px;
   height: 1px;
   padding: 0;
@@ -480,7 +478,7 @@ label {
 
 }
 
-/* ---------------------------------------------------
+/*! ---------------------------------------------------
                    Servicios                          
 ------------------------------------------------------*/
 .servicios__menu {
@@ -544,7 +542,7 @@ label {
   }    
 }
 
-/* -------------------------------------------------
+/*! -------------------------------------------------
                   Nosotros                           
 --------------------------------------------------*/
 
@@ -583,9 +581,10 @@ label {
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
 @media (min-width: 480px) {
     .imagenes {
-  display: grid;
+  display: grid;                /*! grid */
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin-bottom: 4rem;
@@ -596,8 +595,8 @@ label {
   transition-property: transform;
   transition-duration: 500ms;
 }  
-.imagenes_imagen:hover{
-  transform: scale(1.1);
+.imagenes_imagen:hover{      
+  transform: scale(1.1);        /*! aumenta tamaño */
 }  
 :first-child {
   grid-column: 1 / 3;
@@ -614,7 +613,7 @@ label {
   object-fit: cover; 
 } 
 
-/* ---------------------------------------------------
+/*! ---------------------------------------------------
                    CONTACTO                           
 ----------------------------------------------------*/
 
@@ -634,8 +633,8 @@ label {
 }
 @media (min-width: 480px) {
     .contacto__presupuesto {
-      height: 70rem;
-      background-attachment: fixed;
+      height: 74rem;
+      background-attachment: fixed;         /*! fija la imagen */
       
     }
 }
@@ -649,12 +648,7 @@ label {
   background: linear-gradient( rgba(3, 8, 57, 0.5) );
   inset: 0;
 }
-/* @media (min-width: 480px) {
-    .contacto__text {     
-      
-      
-    }
-} */
+
 .contacto__text h2 {
   display: block;
   font-size: 4rem;
@@ -682,6 +676,10 @@ label {
       padding: 0;
     }
 }
+
+/*!--------------------- Social -------------------*/
+
+
 .contacto__social {
   display: flex;
   justify-content:space-around;
@@ -717,6 +715,9 @@ label {
 .social__net--contacto[href*="whatsapp"]::before {    /* wildcard */
   background-image: url(../img/whatsapp.svg);
 } 
+
+/*!-------------------Formulario ---------------------*/
+
 
 .contacto__fiel {
   display: flex;
@@ -804,3 +805,5 @@ label {
   text-align: center ;
   font-size: 2rem;
 }
+
+/*!------------- FIN -------------------------------*/
