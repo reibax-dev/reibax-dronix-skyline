@@ -51,4 +51,4 @@ En el **HEAD** , me he puesto como autor, he puesto una breve descripción, he p
 
 **GIT / GITHUB** Es el primer proyecto mio que hago desde el principio hasta el final usando su sistema de ramas, commits, push etc...
 
-
+**RESPONSIVE** Todo el proyecto es responsive en Phone a 480px.
