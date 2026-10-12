@@ -22,7 +22,7 @@ Al lado derecho he puesto unos **videos** grabados con drones acorde con cada es
 
 ## Servicios 
 
-Es lo mismo que la descripción de especialidades de la empresa pero en vez de videos he utilizado fotos.
+Es lo mismo que la descripción de especialidades de la empresa pero en vez de videos he utilizado fotos ordenadas en grids.
 
 
 ## Nosotros 
@@ -35,7 +35,7 @@ He utilizado una foto de fondo con tres drones y la he oscurecido también para 
 
 Después he puesto una barra con las redes sociales y un fondo degradado para que no desentone.
 
-Por último he puesto el formulario en 2 partes, la primera es para los datos personales y un mensaje, y la segunda para facilitar datos para un presupuesto, como fechas, tipo de trabajo y el envío de fotos o documentos para facilitar el presupuesto.
+Por último he puesto el formulario en 2 partes, la primera es para los datos personales y un mensaje, y la segunda para facilitar datos para un presupuesto, como fechas, tipo de trabajo y el envío de fotos o documentos para facilitar el presupuesto, con una imagen de fondo.
 
 ## Otros Datos de Interés 
 
@@ -43,7 +43,7 @@ En el **HEAD** , me he puesto como autor, he puesto una breve descripción, he p
 
 **LOGO** lo he creado con promps en GeminAI y lo he recortado con un programa de edición. Luego lo pase de .PNG a .SVG
 
-**VIDEOS** Los he grabado desde el portátil en .MOV y con "VLC" los he pasado a .MP4 para bajarles de peso.Aprendido que sin **PLAYSINLINE** los videos no se reproducen en phone.
+**VIDEOS** Los he grabado desde el portátil en .MOV y con "VLC" los he pasado a .MP4 para bajarles de peso. He añadido **PLAYSINLINE** para que los videos se reproduzcan en phone.
 
 **Imagenes** hay un poco de mix porque me las he bajado de Google en .JPG .JPEG .WEBP pero a todas las he incluido el **Loading="Lazy"** 
 
